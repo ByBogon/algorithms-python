@@ -23,7 +23,6 @@ def fibonacci(n):
 
 print(fibonacci(6))
 
-print("---------------")
 # Fibonacci Iterative Version
 def fibonacci_iter(n):
     if n <= 1:
@@ -33,10 +32,6 @@ def fibonacci_iter(n):
     second = 1
     result = 0
     while i <= n:
-        print(f'i: {i}')
-        print(f'first: {first}')
-        print(f'second: {second}')
-        print(f'res: {result}')
         result = first + second
         first = first + (second - first)
         second = result
